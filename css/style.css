@@ -1,0 +1,65 @@
+h2{
+    font-size: large;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+}
+
+textarea{
+    background-color: rgb(39, 39, 11);
+    color:white;
+}
+
+
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+table{
+    /* padding: 1em; */
+    margin: 0 auto;
+}
+
+td{    
+    margin: 0 auto;
+    padding: .22em;
+}
+
+th{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+body{
+    background-color: #121212;
+    color: white;
+}
+
+
+#wrapper {
+    width: 50%;
+    height: fit-content;
+    margin: auto;
+    padding: 10px;
+}
+  
+#creditList {
+    width: 50%;
+    float: left;
+}
+
+#noCreditList {
+    margin-left: 50%;
+}
+
+input[type=number]{
+    width: 3em;
+} 
