@@ -21,12 +21,12 @@ function filter(data, filterType, creditMinutes) {
     var sortedData = [];
 
     //Select all Line plus next two lines with "7Cav"
-    let re7Cav = /7Cav/;
-    let reTactical = /Server|Tactical/;
+    let re7Cav = /7cav/;
+    let reTactical = /server|tactical/;
     let min, hour, time, minutesTotal, name;
  
     for(i=0; i < data.length; i++){
-        if (re7Cav.test(data[i]) && !reTactical.test(data[i])) {
+        if (re7Cav.test(data[i].toLowerCase()) && !reTactical.test(data[i].toLowerCase())) {
             name = data[i].trim(); //Get and Trim Name
             time = data[i+2].substr(data[i+2].length - 5).trim();//Store just the time in hh:mm format
             dupIndex = sortedData.indexOf(name); //Check for index of duplicate entry
